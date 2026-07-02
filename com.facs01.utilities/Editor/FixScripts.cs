@@ -355,7 +355,7 @@ namespace FACS01.Utilities
         {
             var fixedfile = false;
             var tempfilepath = FileUtil.GetUniqueTempPathInProject();
-            using (var reader = new StreamReader(@"\\?\" + Path.GetFullPath(filepath)))
+            using (var reader = new StreamReader(Path.GetFullPath(filepath)))
             {
                 using (var writer = new StreamWriter(tempfilepath))
                 {
@@ -398,7 +398,7 @@ namespace FACS01.Utilities
         {
             var fixedfile = false;
             var tempfilepath = FileUtil.GetUniqueTempPathInProject();
-            using (var reader = new StreamReader(@"\\?\" + Path.GetFullPath(filepath)))
+            using (var reader = new StreamReader(Path.GetFullPath(filepath)))
             {
                 using (var writer = new StreamWriter(tempfilepath))
                 {
@@ -471,7 +471,7 @@ namespace FACS01.Utilities
                     .Select(p => p.Substring(p.IndexOf('/') + 1, p.Length - 9 - p.IndexOf('/')).Replace("/", ".")).ToArray();
                 for (int i = 0; i < metaPaths.Length; i++)
                 {
-                    using (var file = new StreamReader(@"\\?\" + Path.GetFullPath(metaPaths[i]), System.Text.Encoding.UTF8))
+                    using (var file = new StreamReader(Path.GetFullPath(metaPaths[i]), System.Text.Encoding.UTF8))
                     {
                         while (!file.EndOfStream)
                         {
