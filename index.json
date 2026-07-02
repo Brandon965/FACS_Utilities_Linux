@@ -1,0 +1,28 @@
+{
+  "name": "FACS01 Linux VPM Listing",
+  "author": "FACS01",
+  "url": "https://facs01-01.github.io/FACS-VPM-Listing/index.json",
+  "id": "com.facs01.facs_vpm_listing",
+  "packages": {
+    "com.facs01.facs_utilities_linux": {
+      "versions": {
+        "26.07.01": {
+          "name": "com.facs01.facs_utilities_linux",
+          "version": "25.5.27",
+          "description": "Tools to help you edit and repair Unity/VRChat projects",
+          "displayName": "FACS Utilities Linux",
+          "unity": "2022.3",
+          "author": { "name": "FACS01", "url": "https://github.com/FACS01-01" },
+          "changelogUrl": "https://github.com/FACS01-01/FACS_Utilities/releases",
+          "documentationUrl": "https://github.com/FACS01-01/FACS_Utilities/wiki",
+          "license": "OSL-3.0",
+          "licensesUrl": "https://license.md/licenses/open-software-license-3-0/",
+          "type": "Tool",
+          "vpmDependencies": {},
+          "legacyFolders": { "Assets\\FACS01 Utilities Linux": "" },
+          "url": "https://github.com/Brandon965/FACS_Utilities_Linux/releases/download/26.07.01/facs.zip"
+        }
+      }
+    }
+  }
+}
